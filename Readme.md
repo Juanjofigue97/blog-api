@@ -11,3 +11,7 @@ $ django-admin startproject django_project .
 ```
 
 ## Añadir el .gitignore
+
+.venv/
+
+python manage.py startapp accounts
