@@ -6,11 +6,13 @@ services:
     volumes:
       - .:/code
     ports:
-      - 8000:8000
+      - 8181:8000
     depends_on:
       - db
   db:
     image: postgres:13
+    ports:
+      - 5434:5432
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
